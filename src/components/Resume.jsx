@@ -65,7 +65,7 @@ const Resume = () => {
                     {/* Download Button Overlay */}
                     <div className="absolute inset-0 flex justify-center items-center bg-black/40 rounded-2xl backdrop-blur-[2px] transition-opacity opacity-0 group-hover:opacity-100 duration-300">
                         <button
-                            onClick={() => window.open("/resume.pdf", "_blank")}
+                            onClick={() => window.open("/Resume-p.pdf", "_blank")}
                             className="bg-[#915eff] py-3 px-8 outline-none text-white font-bold shadow-md shadow-primary rounded-xl hover:bg-white hover:text-[#915eff] transition-all transform hover:scale-105"
                         >
                             Download Full Resume
