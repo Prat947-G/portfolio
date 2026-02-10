@@ -7,13 +7,19 @@ const Hero = () => {
     return (
         <section className={`relative w-full h-screen mx-auto`}>
             <div
-                className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center justify-start gap-5`}
+                className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center justify-start gap-5 pointer-events-none`}
             >
-                <div className='flex flex-col justify-center items-center mt-5'>
-                    {/* Removed Line Graphic to match centered design */}
+                <div className='flex flex-col justify-center items-center mt-5 mb-5 pointer-events-auto'>
+                    <div className='w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-[#915eff] shadow-[0_0_50px_rgba(145,94,255,0.4)]'>
+                        <img
+                            src="/profile.jpeg"
+                            alt="Prathmesh Kadam"
+                            className='w-full h-full object-cover transform hover:scale-105 transition-transform duration-500'
+                        />
+                    </div>
                 </div>
 
-                <div className='text-center'>
+                <div className='text-center pointer-events-auto'>
                     <h1 className={`${styles.heroHeadText} text-white`}>
                         Hi, I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#915eff] to-[#ff61df]'>Prathmesh Kadam</span>
                     </h1>
