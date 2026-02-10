@@ -212,34 +212,39 @@ const projects = [
 
 const education = [
     {
-        title: "Bachelor of Technology - Computer Science and Engineering",
+        title: "B.Tech in Computer Science and Engineering",
         school_name: "Lovely Professional University",
         icon: meta, // Using existing icon as placeholder
         iconBg: "#383E56",
-        date: "Since August 2022",
-        grade: "CGPA: 8.16",
+        date: "Aug 2023 - Present",
+        grade: "CGPA: 6.45",
         points: [
-            "Pursuing B.Tech in Computer Science.",
-            "Focusing on Data Structures, Algorithms, and Web Technologies.",
+            "Pursuing B.Tech in Computer Science and Engineering.",
+            "Located in Punjab, India.",
         ],
     },
     {
-        title: "Intermediate",
-        school_name: "St Theresa's Convent School",
+        title: "Higher Secondary Education (Intermediate)",
+        school_name: "KSK College",
         icon: starbucks, // Using existing icon as placeholder
         iconBg: "#E6DEDD",
-        date: "April 2021 - March 2022",
-        grade: "Percentage: 90.4%",
-        points: ["Completed 12th grade with a focus on Science and Mathematics."],
+        date: "Apr 2020 - Mar 2022",
+        grade: "Percentage: 83%",
+        points: [
+            "Completed Higher Secondary Education in Pune, India.",
+            "Focus on Science and Mathematics.",
+        ],
     },
     {
-        title: "Matriculation",
-        school_name: "Delhi Public School",
+        title: "Secondary School (Matriculation)",
+        school_name: "Shiva Valley School",
         icon: shopify, // Using existing icon as placeholder
         iconBg: "#383E56",
-        date: "April 2019 - March 2020",
-        grade: "Percentage: 93.3%",
-        points: ["Completed 10th grade with distinction."],
+        date: "Apr 2019 - Mar 2020",
+        grade: "Percentage: 90.8%",
+        points: [
+            "Completed Secondary School Education in Pune, India.",
+        ],
     },
 ];
 
