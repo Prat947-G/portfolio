@@ -1,0 +1,76 @@
+import { motion } from "framer-motion";
+
+import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
+
+const Hero = () => {
+    return (
+        <section className={`relative w-full h-screen mx-auto`}>
+            <div
+                className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+            >
+                <div className='flex flex-col justify-center items-center mt-5'>
+                    <div className='w-5 h-5 rounded-full bg-[#915eff]' />
+                    <div className='w-1 sm:h-80 h-40 violet-gradient' />
+                </div>
+
+                <div>
+                    <h1 className={`${styles.heroHeadText} text-white`}>
+                        Hi, I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#915eff] to-[#ff61df]'>Prathmesh Kadam</span>
+                    </h1>
+                    <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                        Computer Science Undergraduate <br className='sm:block hidden' />
+                        at Lovely Professional University
+                    </p>
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="mt-6 violet-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(145,94,255,0.6)]"
+                        onClick={() => window.open("/resume.pdf", "_blank")}
+                    >
+                        Download Resume
+                    </motion.button>
+                </div>
+            </div>
+
+            <ComputersCanvas />
+
+            <div className='absolute xs:bottom-10 bottom-32 w-full flex flex-col justify-center items-center gap-2'>
+                <a href='#about' className='group flex flex-col items-center gap-2'>
+                    {/* SCROLL Text */}
+                    <motion.p
+                        animate={{
+                            opacity: [0.4, 1, 0.4],
+                        }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                        className='text-[10px] tracking-[0.3em] font-medium text-secondary uppercase group-hover:text-white transition-colors'
+                    >
+                        Scroll
+                    </motion.p>
+
+                    {/* Modern Vertical Line Indicator */}
+                    <div className='w-[2px] h-[50px] bg-secondary/20 rounded-full relative overflow-hidden group-hover:bg-secondary/40 transition-colors'>
+                        <motion.div
+                            animate={{
+                                y: [-10, 50],
+                                opacity: [0, 1, 0],
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                ease: "linear",
+                            }}
+                            className='absolute top-0 left-0 w-full h-[20px] bg-gradient-to-b from-transparent via-[#915eff] to-transparent'
+                        />
+                    </div>
+                </a>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;
