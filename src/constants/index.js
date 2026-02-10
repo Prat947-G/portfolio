@@ -245,25 +245,18 @@ const education = [
 
 const certifications = [
     {
-        name: "Cloud Computing",
-        issuer: "NPTEL",
-        date: "October 2024",
-        image: "https://randomuser.me/api/portraits/lego/1.jpg", // Placeholder
-        credential_link: "#",
+        name: "Python Programming & OOPs",
+        issuer: "Certificate of Completion",
+        date: "2024",
+        image: "https://img.icons8.com/color/144/000000/python--v1.png", // Python Icon
+        credential_link: "/certificates/Python Programming Language with OOPs.pdf",
     },
     {
-        name: "Server-side JavaScript with Node.js",
-        issuer: "Coursera",
-        date: "May 2024",
-        image: "https://randomuser.me/api/portraits/lego/2.jpg", // Placeholder
-        credential_link: "#",
-    },
-    {
-        name: "HTML, CSS, and Javascript for Web Developers",
-        issuer: "Coursera",
-        date: "May 2024",
-        image: "https://randomuser.me/api/portraits/lego/3.jpg", // Placeholder
-        credential_link: "#",
+        name: "Professional Certificate",
+        issuer: "Achievement",
+        date: "2024",
+        image: creator, // Using creator icon as generic placeholder
+        credential_link: "/certificates/Prathmesh_Kadam.pdf",
     },
 ];
 
@@ -283,4 +276,13 @@ const aboutMe = {
     ],
 };
 
-export { services, technologies, experiences, testimonials, projects, education, certifications, aboutMe };
+const achievements = [
+    {
+        title: "LeetCode Profile",
+        platform: "LeetCode",
+        image: "https://leetcard.jacoblin.cool/luminary24?theme=dark&font=inter&ext=heatmap",
+        link: "https://leetcode.com/u/luminary24/"
+    },
+];
+
+export { services, technologies, experiences, testimonials, projects, education, certifications, aboutMe, achievements };
