@@ -6,7 +6,7 @@ import * as random from "maath/random/dist/maath-random.esm.js";
 const Stars = (props) => {
     const ref = useRef();
     const [sphere] = useState(() => {
-        const data = random.inSphere(new Float32Array(5001), { radius: 1.2 });
+        const data = random.inSphere(new Float32Array(2000), { radius: 1.2 });
         // Sanity check to ensure no NaN values
         for (let i = 0; i < data.length; i++) {
             if (isNaN(data[i])) data[i] = 0;

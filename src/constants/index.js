@@ -252,7 +252,7 @@ const certifications = [
         credential_link: "/certificates/Python Programming Language with OOPs.pdf",
     },
     {
-        name: "Professional Certificate",
+        name: "Python Development",
         issuer: "Achievement",
         date: "2024",
         image: creator, // Using creator icon as generic placeholder
