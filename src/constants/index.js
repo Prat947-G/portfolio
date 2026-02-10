@@ -25,18 +25,11 @@ import {
     threejs,
 } from "../assets";
 
+// Navigation Links matching the requested structure
 export const navLinks = [
     {
         id: "home",
         title: "Home",
-    },
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "resume",
-        title: "Resume",
     },
     {
         id: "skills",
@@ -45,6 +38,18 @@ export const navLinks = [
     {
         id: "projects",
         title: "Projects",
+    },
+    {
+        id: "certifications",
+        title: "Certifications",
+    },
+    {
+        id: "achievements", // Mapping to Resume or separate section
+        title: "Achievements",
+    },
+    {
+        id: "resume",
+        title: "Resume",
     },
     {
         id: "contact",
@@ -205,4 +210,77 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const education = [
+    {
+        title: "Bachelor of Technology - Computer Science and Engineering",
+        school_name: "Lovely Professional University",
+        icon: meta, // Using existing icon as placeholder
+        iconBg: "#383E56",
+        date: "Since August 2022",
+        grade: "CGPA: 8.16",
+        points: [
+            "Pursuing B.Tech in Computer Science.",
+            "Focusing on Data Structures, Algorithms, and Web Technologies.",
+        ],
+    },
+    {
+        title: "Intermediate",
+        school_name: "St Theresa's Convent School",
+        icon: starbucks, // Using existing icon as placeholder
+        iconBg: "#E6DEDD",
+        date: "April 2021 - March 2022",
+        grade: "Percentage: 90.4%",
+        points: ["Completed 12th grade with a focus on Science and Mathematics."],
+    },
+    {
+        title: "Matriculation",
+        school_name: "Delhi Public School",
+        icon: shopify, // Using existing icon as placeholder
+        iconBg: "#383E56",
+        date: "April 2019 - March 2020",
+        grade: "Percentage: 93.3%",
+        points: ["Completed 10th grade with distinction."],
+    },
+];
+
+const certifications = [
+    {
+        name: "Cloud Computing",
+        issuer: "NPTEL",
+        date: "October 2024",
+        image: "https://randomuser.me/api/portraits/lego/1.jpg", // Placeholder
+        credential_link: "#",
+    },
+    {
+        name: "Server-side JavaScript with Node.js",
+        issuer: "Coursera",
+        date: "May 2024",
+        image: "https://randomuser.me/api/portraits/lego/2.jpg", // Placeholder
+        credential_link: "#",
+    },
+    {
+        name: "HTML, CSS, and Javascript for Web Developers",
+        issuer: "Coursera",
+        date: "May 2024",
+        image: "https://randomuser.me/api/portraits/lego/3.jpg", // Placeholder
+        credential_link: "#",
+    },
+];
+
+const aboutMe = {
+    introduction: "Hello! I'm Prathmesh Kadam, a passionate developer with a deep fascination for transforming complex problems into elegant digital solutions. My journey in tech began with curious exploration and has evolved into a focused expertise in full-stack development. I specialize in crafting responsive, user-centered applications using React, Node.js, and modern cloud infrastructure.",
+    journey: "What drives me is the intersection of technology and creativity—finding that perfect balance between functional code and intuitive design. I'm constantly expanding my skills through hands-on projects and keeping up with emerging technologies.",
+    approach: "I believe in creating technology that's not just functional but meaningful. Every line of code I write aims to solve real problems and enhance user experiences. I value clean architecture, collaborative development, and continuous learning as the foundations of great software.",
+    quickFacts: [
+        { title: "Location", value: "Punjab, India" },
+        { title: "Education", value: "Pursuing B.Tech in Computer Science" },
+        { title: "Experience", value: "Freshman/Student" },
+    ],
+    hobbies: [
+        { title: "Surfing Web", icon: web },
+        { title: "Reading", icon: creator },
+        { title: "Music", icon: mobile },
+    ],
+};
+
+export { services, technologies, experiences, testimonials, projects, education, certifications, aboutMe };
