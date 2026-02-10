@@ -22,12 +22,19 @@ const Footer = () => {
                 </motion.a>
                 <motion.a
                     whileHover={{ y: -5, scale: 1.1 }}
-                    href="https://linkedin.com/in/prathmesh-kadam"
+                    href="https://www.linkedin.com/in/prathmesh0524"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex justify-center items-center cursor-pointer bg-tertiary rounded-full border border-white/10 hover:border-white/40 transition-all shadow-lg font-bold text-white text-[12px]"
+                    className="w-10 h-10 flex justify-center items-center cursor-pointer bg-tertiary rounded-full border border-white/10 hover:border-white/40 transition-all shadow-lg"
                 >
-                    IN
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="linkedin" className="w-1/2 h-1/2 object-contain" />
+                </motion.a>
+                <motion.a
+                    whileHover={{ y: -5, scale: 1.1 }}
+                    href="mailto:prathmeshkadam0524@gmail.com"
+                    className="w-10 h-10 flex justify-center items-center cursor-pointer bg-tertiary rounded-full border border-white/10 hover:border-white/40 transition-all shadow-lg"
+                >
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/mail.png" alt="email" className="w-1/2 h-1/2 object-contain" />
                 </motion.a>
             </div>
         </footer>
