@@ -7,14 +7,13 @@ const Hero = () => {
     return (
         <section className={`relative w-full h-screen mx-auto`}>
             <div
-                className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+                className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center justify-start gap-5`}
             >
                 <div className='flex flex-col justify-center items-center mt-5'>
-                    <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-                    <div className='w-1 sm:h-80 h-40 violet-gradient' />
+                    {/* Removed Line Graphic to match centered design */}
                 </div>
 
-                <div>
+                <div className='text-center'>
                     <h1 className={`${styles.heroHeadText} text-white`}>
                         Hi, I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#915eff] to-[#ff61df]'>Prathmesh Kadam</span>
                     </h1>
@@ -22,14 +21,24 @@ const Hero = () => {
                         Computer Science Undergraduate <br className='sm:block hidden' />
                         at Lovely Professional University
                     </p>
-                    <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="mt-6 violet-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(145,94,255,0.6)]"
-                        onClick={() => window.open("/resume.pdf", "_blank")}
-                    >
-                        Download Resume
-                    </motion.button>
+                    <div className="flex justify-center gap-4 mt-8">
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="violet-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(145,94,255,0.6)]"
+                            onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            View My Work
+                        </motion.button>
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="bg-transparent border border-[#915eff] py-3 px-8 outline-none w-fit text-white font-bold shadow-md rounded-xl transition-all duration-300 hover:bg-[#915eff] hover:shadow-[0_0_20px_rgba(145,94,255,0.6)]"
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                        >
+                            Contact Me
+                        </motion.button>
+                    </div>
                 </div>
             </div>
 
